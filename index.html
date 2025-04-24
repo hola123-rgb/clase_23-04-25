@@ -6,14 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="resultado">Resultado e la suma es ;80</div>
+    <div id="resultado" style="color: red;">Resultado e la suma es ;80</div>
+    <button onclick="javascript: cambiar();">Cambiar texto</button>
     <script>
-        function suma(valor1,valor2) 
+       function cambiar()
         {
-          var resultado=valor1+valor2;
-          return resultado;  
-        }
-        document.getElementById("resultado").innerHTML="Resultado de la suma es: "+sumar(30,50);
+          document.getElementById("resultado").innerHTML="El texto cambio por seleccionar el boton" 
+       }
     </script>
 </body>
 </html>
