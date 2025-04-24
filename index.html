@@ -6,20 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="resultado"></div>
+    <div id="resultado">Resultado e la suma es ;80</div>
     <script>
-        function sumar()
+        function suma(valor1,valor2) 
         {
-          valor1 = parseInt(prompt("vamos a sumar 2 numeros. Ingrese el numero uno"));
-          valor2 = parseInt(prompt("Ingrese numero dos: "));
-
           var resultado=valor1+valor2;
-          document.getElementById("resultado").innerHTML="la funcion obtiene la siguiente suma:"+resultado;
-            
+          return resultado;  
         }
-
-        sumar()
-        
+        document.getElementById("resultado").innerHTML="Resultado de la suma es: "+sumar(30,50);
     </script>
 </body>
 </html>
